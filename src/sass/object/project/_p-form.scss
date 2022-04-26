@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.p-form__input {
+  border: #707070 1px solid;
+  border-radius: rem(10);
+  background: $white;
+  padding: rem(15);
+  text-align: left;
+  @include mq(md) {
+    padding: rem(30);
+  }
+}
+
+.p-form__input input {
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(22);
+  }
+}
+
+.p-form__input--arrow {
+  position: relative;
+  z-index: 2;
+}
+
+.p-form__input--arrow::after {
+  position: absolute;
+  content: "";
+  width: rem(30);
+  height: rem(30);
+  background: url(../images/common/icon-arrow.png) no-repeat;
+  background-size: contain;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: rem(-31);
+  z-index: 1;
+}
+
+.p-form__input + .p-form__input {
+  margin-top: rem(20);
+}
+
+.p-form__submit {
+  margin-top: rem(34);
+}
+
+.p-form__submit input {
+  max-width: rem(474);
+  width: 100%;
+  margin: auto;
+  filter: drop-shadow(0px 12px 10px rgba(126,126,126,0.6));
+}

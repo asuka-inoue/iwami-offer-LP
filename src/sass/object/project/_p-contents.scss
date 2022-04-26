@@ -1,0 +1,99 @@
+@use "global" as *;
+
+.p-contents {
+  background: url(../images/common/bg-1.jpg);
+  background-size: contain;
+}
+
+.p-contents__inner {
+  padding-top: rem(70);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(86);
+  padding-bottom: rem(84);
+  }
+}
+
+.p-contents__box {
+  background: $white;
+  box-shadow: 3px 3px 20px #00000093;
+  padding: rem(80) rem(15) rem(30);
+  @include mq(md) {
+    padding: rem(112) rem(32) rem(38);
+  }
+}
+
+.p-contents__box + .p-contents__box {
+  margin-top: rem(40);
+}
+
+.p-contents__box--green {
+  background: #C9E8E6;
+}
+
+.p-contents__box-title {
+  position: relative;
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: 1.2;
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(25);
+  }
+}
+
+.p-contents__box-title::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/point01.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: rem(150);
+  height: rem(60);
+  top: rem(-70);
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(md) {
+    width: rem(200);
+  height: rem(80);
+  top: rem(-100);
+  }
+}
+
+.p-contents__box:nth-child(2) .p-contents__box-title::before {
+  background: url(../images/common/point02.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.p-contents__box:nth-child(3) .p-contents__box-title::before {
+  background: url(../images/common/point03.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.p-contents__box-title::after {
+  position: absolute;
+  content: "";
+  background: #C9E8E6;
+  width: rem(150);
+  height: rem(2);
+  bottom: rem(-20);
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq(md) {
+    width: rem(200);
+  height: rem(3);
+  }
+}
+
+.p-contents__box:nth-child(2) .p-contents__box-title::after {
+  background: $white;
+}
+
+.p-contents__text-block {
+  margin-top: rem(50);
+  @include mq(md) {
+    margin-top: rem(68);
+  }
+}

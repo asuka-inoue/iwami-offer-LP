@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="79.898" viewBox="0 0 200 79.898">
+  <g id="point02" transform="translate(-860 -5487.051)">
+    <text id="Point_02" data-name="Point 02" transform="translate(960 5540.051)" fill="#2fb1a7" font-size="30" font-family="TeluguMN, Telugu MN"><tspan x="-68.423" y="0">Point </tspan><tspan y="0" font-size="60">02</tspan></text>
+    <g id="グループ_2260" data-name="グループ 2260">
+      <g id="多角形_14" data-name="多角形 14" transform="translate(972 5566.949) rotate(180)" fill="#fff">
+        <path d="M 19.67040252685547 11.5 L 3.329596996307373 11.5 L 11.5 2.26389217376709 L 19.67040252685547 11.5 Z" stroke="none"/>
+        <path d="M 11.5 4.527795791625977 L 6.659204483032227 10 L 16.34079551696777 10 L 11.5 4.527795791625977 M 11.5 0 L 23 13 L 0 13 L 11.5 0 Z" stroke="none" fill="#fff"/>
+      </g>
+      <line id="線_196" data-name="線 196" x2="200" transform="translate(860 5555.551)" fill="none" stroke="#fff" stroke-width="3" opacity="0.999"/>
+    </g>
+  </g>
+</svg>

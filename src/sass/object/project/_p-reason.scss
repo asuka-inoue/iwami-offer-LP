@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.p-reason {
+  background: rgba(#FDDE99,.5);
+}
+
+.p-reason__inner {
+  padding-top: rem(60);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(98);
+  padding-bottom: rem(50);
+  }
+}
+
+.p-reason__img {
+  max-width: rem(570);
+  width: 100%;
+  margin: rem(30) auto;
+  @include mq(md) {
+    margin: rem(52) auto rem(65);
+  }
+}

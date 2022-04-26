@@ -1,0 +1,93 @@
+@use "global" as *;
+
+.p-cv {
+  background: url(../images/common/cv-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: rem(31) 0 rem(50);
+}
+
+.p-cv__title {
+  position: relative;
+  display: inline-block;
+  font-weight: $bold2;
+  color: $red;
+  font-size: rem(30);
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.p-cv__title::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 7px 0 7px;
+  border-color: $white transparent transparent transparent;
+  transform: rotate(-30deg);
+  left: rem(-32);
+  bottom: rem(3);
+}
+
+.p-cv__title::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 7px 0 7px;
+  border-color: $white transparent transparent transparent;
+  transform: rotate(30deg);
+  right: rem(-32);
+  bottom: rem(3);
+}
+
+.p-cv__form {
+  margin-top: rem(35);
+}
+
+.p-cv__text {
+  font-size: rem(14);
+  text-align: left;
+  line-height: 1.3;
+  margin-top: rem(26);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.5;
+  }
+}
+
+.p-cv__last {
+  position: relative;
+  border-top: 16px solid $black;
+  padding-top: rem(45);
+  @include mq(md) {
+    padding-top: rem(60);
+  }
+}
+
+.p-cv__last::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 31px 24.5px 0 24.5px;
+  border-color: $black transparent transparent transparent;
+  top: rem(-15);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.p-cv__last-title {
+  max-width: rem(320);
+  width: 100%;
+  margin: auto;
+  padding-bottom: rem(16);
+  @include mq(md) {
+    max-width: rem(620);
+  }
+}
