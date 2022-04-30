@@ -13,24 +13,3 @@
     background-position: center;
   }
 }
-
-.p-fv::after {
-  position: absolute;
-  content: "";
-  @include mq(md) {
-    background: url(../images/common/logo.svg) no-repeat;
-    background-size: contain;
-    width: rem(180);
-    height: rem(51);
-    right: rem(20);
-    bottom: rem(20);
-  }
-}
-
-.p-fv__title {
-  @include mq(md) {
-    max-width: rem(1000);
-    width: 100%;
-    margin: auto;
-  }
-}

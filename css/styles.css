@@ -207,7 +207,7 @@ select::-ms-expand {
 
 .c-section-header {
   position: relative;
-  background: #111;
+  background: #32968F;
   padding-top: 23px;
   padding-top: 1.4375rem;
   text-align: center;
@@ -226,7 +226,7 @@ select::-ms-expand {
   height: 0;
   border-style: solid;
   border-width: 0 50vw 37px 0;
-  border-color: transparent #111 transparent transparent;
+  border-color: transparent #32968F transparent transparent;
   left: 0;
 }
 
@@ -235,7 +235,7 @@ select::-ms-expand {
   height: 0;
   border-style: solid;
   border-width: 37px 50vw 0 0;
-  border-color: #111 transparent transparent transparent;
+  border-color: #32968F transparent transparent transparent;
   right: 0;
 }
 
@@ -255,6 +255,10 @@ select::-ms-expand {
   }
 }
 
+.c-section-header__title br {
+  line-height: 0;
+}
+
 .c-section-header__figure {
   position: relative;
   display: inline-block;
@@ -265,7 +269,7 @@ select::-ms-expand {
   height: 30px;
   height: 1.875rem;
   margin: 0 auto;
-  background-color: #F2CD1B;
+  background-color: #2FB1A7;
   left: 0;
   bottom: -8px;
   bottom: -0.5rem;
@@ -282,7 +286,7 @@ select::-ms-expand {
 }
 
 .c-section-header__title span {
-  color: #E8340B;
+  color: #F2CD1B;
 }
 
 @media screen and (min-width: 768px) {
@@ -736,29 +740,6 @@ select::-ms-expand {
   }
 }
 
-.p-fv::after {
-  position: absolute;
-  content: "";
-}
-@media screen and (min-width: 768px) {
-  .p-fv::after {
-    background: url(../images/common/logo.svg) no-repeat;
-    background-size: contain;
-    width: 11.25rem;
-    height: 3.1875rem;
-    right: 1.25rem;
-    bottom: 1.25rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .p-fv__title {
-    max-width: 62.5rem;
-    width: 100%;
-    margin: auto;
-  }
-}
-
 .p-profile__inner {
   padding-top: 70px;
   padding-top: 4.375rem;
@@ -870,12 +851,11 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .p-profile__text-block {
     margin-top: 2.9375rem;
-    text-align: center;
   }
 }
 
 .p-reason {
-  background: rgba(253, 222, 153, .5);
+  background: #C9E8E6;
 }
 
 .p-reason__inner {
@@ -1053,7 +1033,7 @@ select::-ms-expand {
 .p-text__list::before {
   position: absolute;
   content: "";
-  background: url(../images/common/icon-mark.svg) no-repeat;
+  background: url(../images/common/icon01.png) no-repeat;
   background-size: contain;
   width: 18px;
   width: 1.125rem;
