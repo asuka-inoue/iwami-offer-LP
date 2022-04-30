@@ -18,24 +18,6 @@
   }
 }
 
-.p-form__input--arrow {
-  position: relative;
-  z-index: 2;
-}
-
-.p-form__input--arrow::after {
-  position: absolute;
-  content: "";
-  width: rem(30);
-  height: rem(30);
-  background: url(../images/common/icon-arrow.png) no-repeat;
-  background-size: contain;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: rem(-31);
-  z-index: 1;
-}
-
 .p-form__input + .p-form__input {
   margin-top: rem(20);
 }

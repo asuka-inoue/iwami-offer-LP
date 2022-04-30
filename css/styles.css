@@ -682,28 +682,6 @@ select::-ms-expand {
   }
 }
 
-.p-form__input--arrow {
-  position: relative;
-  z-index: 2;
-}
-
-.p-form__input--arrow::after {
-  position: absolute;
-  content: "";
-  width: 30px;
-  width: 1.875rem;
-  height: 30px;
-  height: 1.875rem;
-  background: url(../images/common/icon-arrow.png) no-repeat;
-  background-size: contain;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  bottom: -31px;
-  bottom: -1.9375rem;
-  z-index: 1;
-}
-
 .p-form__input + .p-form__input {
   margin-top: 20px;
   margin-top: 1.25rem;
